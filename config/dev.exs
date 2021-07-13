@@ -6,6 +6,7 @@ config :json_media, JsonMedia.Repo,
   password: "postgres",
   database: "json_media_dev",
   hostname: "localhost",
+  port: 45435,
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
 
