@@ -1,4 +1,4 @@
-use Mix.Config
+import Config
 
 # Configure your database
 config :json_media, JsonMedia.Repo,
