@@ -7,7 +7,8 @@ defmodule JsonMedia.Umbrella.MixProject do
       version: "0.1.0",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
-      aliases: aliases()
+      aliases: aliases(),
+      releases: releases()
     ]
   end
 
@@ -40,6 +41,18 @@ defmodule JsonMedia.Umbrella.MixProject do
     [
       # run `mix setup` in all child apps
       setup: ["cmd mix setup"]
+    ]
+  end
+
+  defp releases() do
+    [
+      json_media_api: [
+        applications: [
+          json_media: :permanent,
+          json_media_web: :permanent
+        ],
+        steps: [:assemble, :tar]
+      ]
     ]
   end
 end
