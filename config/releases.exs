@@ -8,5 +8,5 @@ config :json_media, JsonMedia.Repo,
 config :json_media_web, JsonMediaWeb.Endpoint,
   http: [port: System.get_env("PORT")],
   secret_key_base: System.get_env("SECRET_KEY_BASE"),
-  url: [host: System.get_env("APP_NAME") <> ".gigalixirapp.com", port: 443],
+  url: [host: System.get_env("DOMAIN"), port: 443],
   server: true
