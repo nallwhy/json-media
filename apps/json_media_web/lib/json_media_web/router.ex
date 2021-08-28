@@ -19,6 +19,12 @@ defmodule JsonMediaWeb.Router do
     get "/", PageController, :index
   end
 
+  scope "/blog", JsonMediaWeb.Blog do
+    pipe_through :browser
+
+    get "/", PostController, :index
+  end
+
   # Other scopes may use custom stacks.
   # scope "/api", JsonMediaWeb do
   #   pipe_through :api
