@@ -14,7 +14,7 @@
 
 [Phoenix](https://phoenixframework.org/) 는 Elixir 로 만들어진 web framework 로, Elixir 의 **Concurrency**, **Reliability**, **Productivity** 등 여러 장점을 고스란히 활용하고 있습니다.
 
-![Phoenix Homepage](./images/20210906/phoenix_homepage.png)
+![Phoenix Homepage](./posts/images/20210906/phoenix_homepage.png)
 
 나중에 **Why Phoenix?** 라는 글로 Phoenix 의 장점들을 정리해보도록 하겠습니다.\
 일단은 실전!
@@ -199,7 +199,7 @@ webpack is watching the files…
 
 이제 웹 브라우저에서 `http://localhost:4000` 로 접속해서 web server 가 잘 실행되었는지 확인해봅시다.
 
-![Phoenix Screen](./images/20210906/phoenix_screen.png)
+![Phoenix Screen](./posts/images/20210906/phoenix_screen.png)
 
 
 ## 마무리
